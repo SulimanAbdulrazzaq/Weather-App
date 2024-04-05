@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/gw" method="post">
+        <input type="text" name="name" placeholder="type the City" autofocus>
+        <button>Get Weather</button>
+    </form>
+    <div class="wea">
+        <h2 class="h2"><% if (locals.weather == "clear sky") { %>
+                <div class="weather">
+                    <img src="images/clear.png" alt="">
+                    <h3><%= locals.weather%></h3>
+                </div>
+            <% } else if(locals.weather== "few clouds") {%>
+                <div class="weather">
+                    <img src="images/few.png" alt="">
+                <h3><%= locals.weather%></h3>
+                </div>
+
+                <% } else if (locals.weather== "broken clouds"){%>
+                <div class="weather">
+                    <img src="images/broken.png" alt="">
+                <h3><%= locals.weather%></h3>
+                </div>
+
+    
+                <% } else if (locals.weather== "scattered clouds"){%>
+                    <div class="weather">
+                        <img src="images/broken.png" alt="">
+                    <h3><%= locals.weather%></h3>
+                    </div>
+                    <% } else if(locals.weather == "moderate rain") {%>
+                        <div class="weather">
+                            <img src="images/mrain.png" alt="">
+                        <h3><%= locals.weather%></h3>
+                        </div>
+                    <% } else if(locals.weather == "mist") {%>
+                        <div class="weather">
+                            <img src="images/mist.png" alt="">
+                        <h3><%= locals.weather%></h3>
+                        </div>
+                        <% } else if(locals.weather == "smoke") {%>
+                            <div class="weather">
+                                <img src="images/smoke.png" alt="">
+                            <h3><%= locals.weather%></h3>
+                            </div>
+                            <% } else if(locals.weather == "light rain"){%>
+                                <div class="weather">
+                                    <img src="images/lrain.png" alt="">
+                                <h3><%= locals.weather%></h3>
+                                </div>
+                                <% } else if(locals.weather == "light intensity drizzle"){%>
+                                    <div class="weather">
+                                        <img src="images/lrd.png" alt="">
+                                    <h3><%= locals.weather%></h3>
+                                    </div>
+                                    <% }  else if(locals.weather == "overcast clouds"){%>
+                                        <div class="weather">
+                                            <img src="images/oc.png" alt="">
+                                        <h3><%= locals.weather%></h3>
+                                        </div>
+                                        <% } else if(locals.weather == "haze"){%>
+                                            <div class="weather">
+                                                <img src="images/haze.png" alt="">
+                                            <h3><%= locals.weather%></h3>
+                                            </div>
+                                        <% } %>
+                    
+        </h2>
+        <h1 class="t"><%= locals.t %> <span style="font-size: 55px;">°C</span></h1>
+    
+
+    
+    </div>
+
+</body>
+</html>

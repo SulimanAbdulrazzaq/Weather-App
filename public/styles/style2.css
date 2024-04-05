@@ -1,0 +1,80 @@
+body{
+    background-image: url("../images/background.png");
+    
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 15px;
+    flex-direction: column;
+    gap: 17px;
+}
+input{
+    width: 265px;
+    height: 40px;
+    border-radius: 7px;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input::placeholder{
+    font-size: 18.5px;
+}
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    border: 2px #66A7DC solid;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: 0.5s ease;
+    color: #535579;
+    font-weight: 500;
+}
+button:hover{
+    transform: scale(1.05   );
+}
+
+.texts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    flex-direction: row;
+}
+
+.wea{
+    width: 100%;
+    height: 394px;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+.t{
+    font-size: 70px;
+    height: fit-content;
+}
+img{
+    border-radius: 50%;
+    height: 140px;
+    width: 170px;
+    margin-right: 10px;
+}
+h3{
+    height: fit-content;
+    margin-left: 12px;
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+
+}
+.h2{
+    height: fit-content;
+}
